@@ -211,6 +211,142 @@ a:hover {
 }
 
 
+
+  
+
+/* CONTACT-TAB CSS */
+/* CONTACT-TAB CSS */
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+   input[type=text], select, textarea {
+    width: 876px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+    font-size: 20px;
+    color: #888888;
+  }
+
+  input[type=email], select, textarea {
+    width: 876px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+    font-size: 20px;
+    color: #888888;
+  }
+  
+  
+  label {
+    padding: 0px 0px 0px 0px;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+
+    font-size: 20px;
+  }
+  
+  ::placeholder {
+    color: #cccccc;
+  }
+
+  /* SUBMIT BUTTON */
+  input[type=submit]:hover {
+    background-color: #4fb8b2;
+  }
+  
+  .label {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+  }
+  
+  .input-box {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+
+  }
+  
+
+  /* Clear floats after the columns */
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .content-label:after {
+    clear: both;
+  }
+
+
+
+
+  /* PORTFOLIO-TAB CSS - CARDS */
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+}
+
+
+.column {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 33.3%;
+    padding: .5em;
+
+  }
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 .1em .25em 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: fit-content;
+    margin-top: 1em;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 .5em 1.5em 0 rgba(0,0,0,0.2);
+  }
+  
+  /* TEXT CONTAINER UNDER CARD */
+  .container {
+    display: flex;
+    flex-flow: column;
+    margin-top: -.75em;
+    /* padding: .125em 1em; */
+    background-color: #4aaaa5;
+
+    color: white;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 1.5vw;
+    text-align: center;
+
+  }
+
+
 /* ------------ MEDIA QUERIES -------------- */
 
 /* ---- 904 PX ---- */
@@ -233,6 +369,13 @@ a:hover {
         width: fit-content;
         border-left: 0em solid white;
         line-height: 2em;
+    }
+
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 50%;
+
     }
 
 }
@@ -259,6 +402,16 @@ a:hover {
         line-height: 2em;
     }
 
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+
+    }
+    .container {
+        font-size: 3vw;
+    
+      }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -300,6 +453,18 @@ and (orientation: portrait) {
         line-height: 2em;
     }
 
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+
+    }
+
+    .container {
+        font-size: 3vw;
+    
+      }
+
 }
 
 /* Landscape */
@@ -310,11 +475,11 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) { 
 
     #main {
-        width: 80%;
+        width: 90%;
     }
 
     #header-box-center {
-        width: 80%;
+        width: 90%;
     }
     #name-box {
         width: 100%;
@@ -336,8 +501,16 @@ and (orientation: landscape) {
         line-height: 2em;
     }
 
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 50%;
+
+    }
+
+    .container {
+        font-size: 3vw;
+    
+      }
+
 }
-
-  
-
-/* CONTACT-TAB CSS */

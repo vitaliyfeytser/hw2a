@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Vitaliy's Profile Page</title>
+    <title>About Me</title>
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
@@ -12,30 +12,37 @@
 </head>
 
 <!-- BACKGROUND IMAGE -->
-<body style="background-image:url(assets/images/light-grey-terrazzo.png)">
+<!-- <body style="background-image:url(assets/images/light-grey-terrazzo.png)"> -->
 
+<body>
 
-    <!-- PAGE ALIGNMENT CONTAINER -->
-    <main id="main">
-
-        <header id="header-box"></header>
-
+    <!-- PAGE ALIGNMENT CONTAINERS -->
+        
+    <header id="header-box">
+        
         <header id="header-box-center">
 
-                <div id="name-box">Vitaliy Feytser</div>
-
-                <!-- NAV TABS -->
-                <a href="contact.html" class="tab contact-tab" >Contact</a>
-                <a href="portfolio.html"class="tab porfolio-tab">Portfolio</a>
-                <a href="index.html"class="tab about-tab">About</a>
+            <div id="name-box">Vitaliy Feytser</div>
+            
+            <!-- NAV TABS -->
+            <div id="tab-box">
+                <a href="index.html" class="tab about-tab">About</a>
+                <a href="portfolio.html" class="tab porfolio-tab">Portfolio</a> 
+                <a href="contact.html" class="tab contact-tab">Contact</a>
+            </div>
 
         </header>
 
-        <!-- MAIN CONTENT BOX - CARDS -->
+    </header>
+
+    <!-- MAIN CONTENT BOX - CARDS -->  
+    <main id="main">
+
         <article id="text-box">
 
-    
-            <div class="content-label">Portfolio</div>
+            <div id="content-label">Portfolio</div>
+
+            <hr id="content-hr">
 
             <div class="row">
 
@@ -43,7 +50,7 @@
                     <div class="card">
                         <img src="./assets/images/manhattan.jpeg" alt="Central Park" style="width:100%">
                         <div class="container">
-                            <h2><b>Central Park</b></h2> 
+                            <h2>Central Park</h2> 
                             <p>New York, NY</p> 
                         </div>
                     </div>
@@ -53,7 +60,7 @@
                     <div class="card">
                         <img src="./assets/images/sunset.jpg" alt="Sunset" style="width:100%">
                         <div class="container">
-                            <h2><b>Sister & Sunset</b></h2> 
+                            <h2>Sister & Sunset</h2> 
                             <p>San Diego, CA</p> 
                         </div>
                     </div>
@@ -63,7 +70,7 @@
                     <div class="card">
                         <img src="./assets/images/liberty.jpeg" alt="Liberty" style="width:100%">
                         <div class="container">
-                            <h2><b>Lady Liberty</b></h2> 
+                            <h2>Lady Liberty</h2> 
                             <p>New York, NY</p> 
                         </div>
                     </div>
@@ -73,35 +80,43 @@
                     <div class="card">
                         <img src="./assets/images/storm-trooper.jpeg" alt="Storm-Trooper" style="width:100%">
                         <div class="container">
-                            <h2><b>Storm-Trooper</b></h2> 
+                            <h2>Storm-Trooper</h2> 
                             <p>Shawnee, VA</p> 
                         </div>
                     </div>
                 </div>
-
-                                
+        
                 <div class="column">
                     <div class="card">
                         <img src="./assets/images/daisy.jpeg" alt="Daisy" style="width:100%">
                         <div class="container">
-                            <h2><b>My Pup Daisy</b></h2> 
+                            <h2>My Pup Daisy</h2> 
                             <p>Citrus Heights, CA</p> 
                         </div>
                     </div>
                 </div>
+                
+                <!-- <div class="column">
+                    <div class="card">
+                        <img src="./assets/images/liberty.jpeg" alt="Liberty" style="width:100%">
+                        <div class="container">
+                            <h2>Lady Liberty</h2> 
+                            <p>New York, NY</p> 
+                        </div>
+                    </div>
+                </div> -->
 
-            </div>    
-
+            </div>
+            
         </article>
-        
-
-        <!-- FOOTER -->
-        <footer id="footer-box">
-            <p>@VitaliyFeytser</p>
-        </footer>
 
     </main>
-
-
+        
+    <div id="bottom-spacer">...</div>
     
+    <!-- FOOTER -->
+    <footer id="footer-box">
+        <p>@VitaliyFeytser</p>
+    </footer>
+ 
 </body>
